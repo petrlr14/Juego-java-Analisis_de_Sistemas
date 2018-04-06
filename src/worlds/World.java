@@ -7,6 +7,7 @@ package worlds;
 
 import entities.EntityManager;
 import entities.cratures.Enemigo;
+import entities.cratures.Enemigo1;
 import entities.cratures.Player;
 import entities.statics.Tree;
 import java.awt.Graphics;
@@ -29,7 +30,7 @@ public class World {
 	
     public World(Handler handler, String path){
 	this.handler=handler;
-        entityManager=new EntityManager(handler, new Player(handler,100, 100), new Enemigo(handler,250,800));
+        entityManager=new EntityManager(handler, new Player(handler,100, 100), new Enemigo(handler,250,800,240,194));
         loadWorld(path);
         entityManager.getPlayer().setX(spawnX);
         entityManager.getPlayer().setY(spawnY);
