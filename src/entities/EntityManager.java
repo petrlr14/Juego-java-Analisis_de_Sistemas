@@ -51,7 +51,8 @@ public class EntityManager {
     
     public void render(Graphics g){
         for(Entity e:entities){
-            e.render(g);
+            e.render(g); 
+            //g.fillRect(e.getCollisionBounds(0f,0f).x,e.getCollisionBounds(0f,0f).y-500,e.getCollisionBounds(0f,0f).width,e.getCollisionBounds(0f,0f).height);
         }
     }
 
