@@ -19,6 +19,7 @@ public abstract class Entity {
     
     protected int width, height;
     protected float x, y;
+    protected float xo, yo;
     protected Handler handler;
     protected Rectangle bounds;
     
@@ -44,6 +45,23 @@ public abstract class Entity {
     
     public Rectangle getCollisionBounds(float xOffSet, float yOffSet){
         return new Rectangle((int)(x+bounds.x+xOffSet), (int)(y+bounds.y+yOffSet), bounds.width, bounds.height);
+    }
+    
+    public void setBounds(float x, float y, int width, int height){
+        bounds = new Rectangle((int)x, (int)y, width, height);
+    }
+    
+    public void setCenter(int x, int y){
+        xo = x;
+        yo = y;
+    }
+    
+    public float getCenterX(){
+        return x+xo;
+    }
+    
+    public float getCenterY(){
+        return y+yo;
     }
     
     public int getWidth() {
