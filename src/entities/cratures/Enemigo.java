@@ -20,19 +20,32 @@ public class Enemigo extends Creature{
     private BufferedImage curPosition;
     private Animation animation;
     
-    public Enemigo(Handler handler, float x, float y) {
-        super(handler, x, y, 200, 200);
-        bounds.x=17;
-        bounds.y=32;
-        bounds.width=16;
-        bounds.height=16;
+    public Enemigo(Handler handler, float x, float y, int width, int height) {
+        super(handler, x, y, width, height);
+        //bounds.x=17;
+        //bounds.y=32;
+        //bounds.width=16;
+        //bounds.height=16;
         animation=new Animation(70, Assets.enemigoA);
+        setBounds(width/2-25, height/2-25,50,50);
+        setCenter(width/2-25, height/2-25);
     }
 
     @Override
     public void update() {
         animation.update();
         handler.getGameCamera().centerOnEntity(this);
+        if(this.getCenterX()-handler.getWorld().getEntityManager().getPlayer().getX()<0){
+            this.setxMove(1f);
+        }else{
+            this.setxMove(-1f);
+        }
+        if(this.getCenterY()-handler.getWorld().getEntityManager().getPlayer().getY()<0){
+            this.setyMove(1f);
+        }else{
+            this.setyMove(-1f);
+        }
+        move();
     }
     
     
