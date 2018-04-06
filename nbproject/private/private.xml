@@ -2,6 +2,17 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/Users/Pedro%20Gómez/Documents/NetBeansProjects/JuegoPalmastico/src/entities/cratures/Player.java</file>
+            <file>file:/C:/Users/Pedro%20Gómez/Documents/NetBeansProjects/JuegoPalmastico/src/entities/Entity.java</file>
+            <file>file:/C:/Users/Pedro%20Gómez/Documents/NetBeansProjects/JuegoPalmastico/src/worlds/World.java</file>
+            <file>file:/C:/Users/Pedro%20Gómez/Documents/NetBeansProjects/JuegoPalmastico/src/entities/cratures/Creature.java</file>
+            <file>file:/C:/Users/Pedro%20Gómez/Documents/NetBeansProjects/JuegoPalmastico/src/entities/statics/Tree.java</file>
+            <file>file:/C:/Users/Pedro%20Gómez/Documents/NetBeansProjects/JuegoPalmastico/src/entities/cratures/Enemigo.java</file>
+            <file>file:/C:/Users/Pedro%20Gómez/Documents/NetBeansProjects/JuegoPalmastico/src/entities/EntityManager.java</file>
+            <file>file:/C:/Users/Pedro%20Gómez/Documents/NetBeansProjects/JuegoPalmastico/src/launcher/Game.java</file>
+            <file>file:/C:/Users/Pedro%20Gómez/Documents/NetBeansProjects/JuegoPalmastico/src/gfx/Assets.java</file>
+            <file>file:/C:/Users/Pedro%20Gómez/Documents/NetBeansProjects/JuegoPalmastico/src/gfx/SpriteSheet.java</file>
+        </group>
     </open-files>
 </project-private>
