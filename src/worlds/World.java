@@ -11,6 +11,8 @@ import entities.cratures.Enemigo1;
 import entities.cratures.Player;
 import entities.statics.Tree;
 import java.awt.Graphics;
+import java.io.File;
+import java.io.IOException;
 import launcher.Game;
 import launcher.Handler;
 import tiles.Tile;
@@ -30,7 +32,7 @@ public class World {
 	
     public World(Handler handler, String path){
 	this.handler=handler;
-        entityManager=new EntityManager(handler, new Player(handler,100, 100), new Enemigo(handler,250,800,240,194));
+        entityManager=new EntityManager(handler, new Player(handler,100, 100));
         loadWorld(path);
         entityManager.getPlayer().setX(spawnX);
         entityManager.getPlayer().setY(spawnY);
@@ -65,7 +67,8 @@ public class World {
 	return t;
     }
 	
-    private void loadWorld(String path){
+    private void loadWorld(String path) {
+                      System.out.println(path);
 	String file = Utils.loadFileAsString(path);
 	String[] tokens = file.split("\\s+");
 	width = Utils.parseInt(tokens[0]);
