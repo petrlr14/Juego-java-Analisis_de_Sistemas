@@ -22,7 +22,7 @@ public class GameState extends States{
     
     public GameState(Handler handler) {
         super(handler);
-        world = new World(handler, "../JuegoPalmastico/src/res/worlds/1.txt");
+        world = new World(handler, "src/res/worlds/1.txt");
         handler.setWorld(world);
     }
 
