@@ -33,13 +33,11 @@ public class EntityManager {
         }
     };
     
-    public EntityManager(Handler handler, Player player, Enemigo enemigo){
+    public EntityManager(Handler handler, Player player){
         this.handler=handler;
         this.player=player;
-        this.enemigo=enemigo;
         entities=new ArrayList<>();
         addEntity(player);
-        addEntity(enemigo);
     }
     public void update(){
         for(int i=0; i<entities.size();i++){
